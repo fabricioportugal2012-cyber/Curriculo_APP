@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1e3a8a, #020617);
+  color: #f9fafb;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #c7d2fe;
+}
+
+/* BOTÕES */
+.btn {
+ background: #22c55e;
+  color: #022c22;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  display: inline-block;
+  transition: 0.3s;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.4);
+}
+
+.btn:hover {
+  background: #16a34a;
+  transform: scale(1.03);
+}
+
+.floating-buy {
+  background: #22c55e;
+  color: #022c22;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  display: inline-block;
+  transition: 0.3s;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.4);}
+
+.floating-buy:hover {
+  background: #16a34a;
+  transform: scale(1.03);
+}
+.btn-primary {
+  background: linear-gradient(135deg, #00ff99, #00ccff);
+  color: #000;
+  font-weight: bold;
+}
+.btn-big {
+  font-size: 1.3rem;
+  padding: 18px 42px;
+}
+
+/* SEÇÕES */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.benefits h2,
+.how h2,
+.cta h2,
+.faq h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f8fafc;
+}
+
+/* BENEFÍCIOS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  padding: 22px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  border: 1px solid #1e293b;
+}
+
+/* COMO FUNCIONA */
+.how ol {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+.how li {
+  margin-bottom: 15px;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, #020617, #020617);
+  border-radius: 18px;
+  text-align: center;
+  border: 1px solid #1e293b;
+}
+
+.cta p {
+  color: #a5b4fc;
+  margin-bottom: 25px;
+}
+
+/* FAQ */
+.faq p {
+  max-width: 700px;
+  margin: 18px auto;
+  color: #d1d5db;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  color: #94a3b8;
+  text-align: center;
+  padding: 22px;
+  font-size: 0.9rem;
+  border-top: 1px solid #1e293b;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .btn-big {
+    width: 100%;
+  }
+}
+
+/* ============================= */
+/* 📱 RESPONSIVO PARA CELULAR */
+/* ============================= */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  header {
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 40px 16px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-top: 12px;
+  }
+
+  /* BOTÃO PRINCIPAL */
+  .btn,
+  .btn-primary {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  /* CARDS */
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+
+  /* SEÇÃO PREÇO */
+  .price-box {
+    padding: 24px 16px;
+    border-radius: 14px;
+  }
+
+  .price {
+    font-size: 2rem;
+  }
+
+  /* LISTAS */
+  ul {
+    padding-left: 16px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 24px 16px;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
+
+
+/* ============================= */
+/* 🔥 BOTÃO FLUTUANTE MOBILE */
+/* ============================= */
+@media (max-width: 768px) {
+  .floating-buy {
+    position: fixed;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    z-index: 9999;
+
+    background: #22c55e;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 1.05rem;
+
+    box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
+    animation: pulse 1.5s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
